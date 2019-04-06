@@ -1,0 +1,80 @@
+#chatBox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#chatBox ul li {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 5px 0 5px 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.tme {
+    position: relative;
+    top: -10px;
+    left: -2px;
+    color: #d8d8d8;
+    font-size: 0.9em;
+}
+
+.thim {
+    position: relative;
+    top: -10px;
+    left: -2px;
+    font-size: 0.9em;
+}
+
+.him {
+    background: #eee;
+    float: left;
+}
+
+.me {
+    float: right;
+    background: #0084ff;
+    color: #fff;
+}
+
+.outerFrame {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.captureFrame {
+    border: 1px solid #ced4da;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+textarea:invalid, input:invalid {
+    border-color: darkorange;
+}
+
+body {
+    min-width: 300px;
+}
